@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(82 148 226) 23%, rgb(82 148 226) 27%, rgb(70 211 255) 85%);
+    padding: 0.8% 5.2%;
+}
+
+.parent-nav {
+    position: sticky;
+    top: 0;
+    z-index: 99999999999;
+}
+
+
+
+.navbar-options {
+    display: flex;
+    ;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-listitem {
+    padding: 10px 16px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #0065C2;
+    cursor: pointer;
+}
+
+.only-hover-on:hover {
+    color: white;
+}
+
+
+.line-parent {
+    margin-top: -10px;
+    opacity: 0;
+}
+
+.alwys-active {
+    opacity: 1;
+}
+
+.only-hover-on:hover .line-parent {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.contact-butn {
+    border: 1.04375px solid #0065C2;
+    border-radius: 6.2625px;
+    transition: 0.25s;
+    
+}
+
+.contact-butn:hover,
+.contact-butn:focus {
+  box-shadow: inset 0 0 0 2em #0065C2;
+  color: white;
+}
+
+li.nav-listitem.contact-butn {
+    height: 30px;
+}
+
+@media screen and (min-width:982px) and (max-width:1200px) {
+
+    
+    
+    .nav-listitem {
+        padding: 8px 12px;
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 31px;
+        text-align: center;
+        color: #0065C2;
+        cursor: pointer;
+      }
+}
+
+@media screen and (min-width:770px) and (max-width:982px) {
+    .nav-listitem {
+        padding: 6px 8px;
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 27px;
+        text-align: center;
+        color: #0065C2;
+        cursor: pointer;
+      }
+
+      .logo {
+        width: 80%;
+      }
+}
+
+@media screen and (min-width:500px) and (max-width:770px){
+    .nav-listitem {
+        padding: 3px 3px;
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 29px;
+        text-align: center;
+        color: #0065C2;
+        cursor: pointer;
+      }
+
+    
+    .logo {
+      width: 66%;
+    }
+}
+
