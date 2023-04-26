@@ -7,7 +7,9 @@
   padding-top: 13.9%;
   position: relative;
 }
-
+p#can-check {
+  height: 300px;
+}
 img.foo {
   width: 100%;
 }
